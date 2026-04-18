@@ -1,10 +1,4 @@
-power brownouts, we strictly isolated the logic, vision, and high-amperage power systems.
-
-* **The Vision & Network Hub:** An Android smartphone broadcasting a locked 2.4GHz local hotspot while simultaneously running an IP Webcam server for high-definition, battery-backed optical tracking.
-* **The Central Brain:** An Apple M2 Mac running a custom Python 3.11 environment. It processes the video feed, calculates the biomedical kinematics at 30+ FPS, and transmits a single, consolidated UDP packet containing 10 servo angles over the local network.
-* **The Logic Hub:** A single ESP32 microcontroller acting as the master endpoint. It listens on UDP Port `1111`, parses the data, and distributes the hardware PWM signals to all 10 fingers simultaneously.
-* **The Actuation & Power Isolation:** * 10x MG90S Micro Servos.
-  * Powered by a 7.4V LiPo battery split into **two independent 10A UBEC power rails** (Left and Right). # Sci-Tech Labs: Tele-Operated Robotic Hand
+ # Sci-Tech Labs: Tele-Operated Robotic Hand
 
 **A clinical-grade, zero-latency dual robotic hand system controlled via wireless optical AI tracking.**
 
@@ -34,4 +28,4 @@ To guarantee zero-lag performance and completely eliminate
 *(This entire pipeline executes in milliseconds).*
 
 ---
-*Designed and Engineered by Aniket, Pragati, Yug| Sci-Tech Labs*
+*Designed and Engineered by Aniket, Pragati, Manas| Sci-Tech Labs*
